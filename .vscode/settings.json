@@ -1,0 +1,75 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.server.launchMode": "Standard",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "bin/": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/*~": true
+  },
+  "java.test.config": [
+    {
+      "name": "WPIlibUnitTests",
+      "workingDirectory": "${workspaceFolder}/build/jni/release",
+      "vmargs": [
+        "-Djava.library.path=${workspaceFolder}/build/jni/release"
+      ],
+      "env": {
+        "LD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release",
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release"
+      }
+    }
+  ],
+  "java.test.defaultConfig": "WPIlibUnitTests",
+  "editor.formatOnSave": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.detectIndentation": false,
+    "editor.indentSize": 4
+  },
+  "spotlessGradle.format.enable": true,
+  "spotlessGradle.diagnostics.enable": true,
+  "git.ignoreLimitWarning": true,
+  "java.format.settings.profile": "TDUStyle",
+  "java.format.settings.url": ".vscode/java-formatter-settings.xml",
+  "cSpell.words": [
+    "colour",
+    "CTRE",
+    "dancepad",
+    "DDRPAD",
+    "deadband",
+    "drivebase",
+    "dualshock",
+    "extn",
+    "favourite",
+    "Feedforward",
+    "Gamepad",
+    "gradlew",
+    "initialisation",
+    "intaking",
+    "jevois",
+    "odometry",
+    "omniwheels",
+    "outtake",
+    "pathweaver",
+    "PIDF",
+    "Ramsete",
+    "RoboRIO",
+    "setpoint",
+    "smartdashboard",
+    "strongback",
+    "teleop",
+    "thumbstick",
+    "wpilib",
+    "wpilibj"
+  ],
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+  "files.eol": "\n"
+}
